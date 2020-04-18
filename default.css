@@ -20,7 +20,6 @@ body{
 a:link{ color: #4183c1;}
 a:visited{ color: #86abcd;}
 a:hover{
-  background: #fffeef;
   color: #ce4646;
   text-decoration: none;
 }
@@ -89,7 +88,7 @@ nav{
 }
 
 #nav ul li a:hover:not(.active){
-  background-color: #a9bce2;
+  background-color: #006400;
 }
 
 .active{
@@ -117,7 +116,7 @@ nav{
   grid-template-columns: 350px;
 }
 
-.gird_itemA{
+.grid_itemA{
   grid-row: 1 /2;
   grid-column: 1/2;
   background: #dc143c;
@@ -126,11 +125,20 @@ nav{
 .grid_itemB{
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  background: #ee82ee;
+
 }
 
 .grid_itemC{
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  background: #a9a9a9;
+
+}
+
+.grid_movie{
+  margin-left: 16px;
+  margin-top: 0px;
 }
 
 /*aside*/
@@ -140,7 +148,61 @@ aside{
   width: 250px;
 }
 
+.profile{
+  text-decoration: dashed underline #ff8c00;
+}
+
 /*footer*/
 footer{
   clear: both;
+  background: #a9a9a9;
+}
+
+.footer_text{
+  background: #c0c0c0;
+  margin-bottom: 16px;
+}
+
+.footer_bar{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.footer_bar ul{
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.footer_element{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.twitter_icon{
+  width: 60px;
+  height: 60px;
+}
+
+.contact{
+  display: flex;
+}
+
+.contact_element{
+  margin-right: 16px;
+}
+
+.contact_element dl{
+  margin-top: 0px;
+}
+
+.contact_element dt{
+  float: left;
+  font-weight: bold;
+  clear: both;
+}
+
+.contact_element dd{
+  margin-left: 100px;
 }
