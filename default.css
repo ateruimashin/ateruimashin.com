@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*resets*/
+main,section,nav,article,aside,hgroup,header,footer,figure,figcaption,summary{display: block; margin: 0; padding: 0;}
+
+caption,th{ margin: auto; text-align: left;}
+img{ border: 0; vertical-align: bottom;}
+address,caption,th{ font-weight: normal; font-style: normal;}
+
+/*body,Anchor*/
+body{
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #222;
+  font-size: 16px;
+  font-family: 'メイリオ', Meiryo,'Meiryo UI',YuGothic,'Yu Gothic','ＭＳ Ｐゴシック','MS PGothic','Times New Roman','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  line-height: normal;
+}
+
+a:link{ color: #4183c1;}
+a:visited{ color: #86abcd;}
+a:hover{
+  background: #fffeef;
+  color: #ce4646;
+  text-decoration: none;
+}
+
+/*clearfix*/
+.clearfix{ *zoom:1;}
+.clearfix::before,
+.clearfix::after{
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix::after{clear: both;}
+
+/*Layout*/
+#container{
+  margin: 0 auto;
+  width: 960px;
+}
+
+/*content*/
+#content{
+  float: left;
+  width: 680px;
+}
+
+/*hader*/
+header{
+  margin-bottom: 0px;
+  padding:0px;
+}
+
+/*navi*/
+nav{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#nav{
+  paddin: 3px;
+}
+
+#nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #2e8b57;
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav ul li{
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+#nav ul li:last-child{
+  border-right: none;
+}
+
+#nav ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav ul li a:hover:not(.active){
+  background-color: #a9bce2;
+}
+
+.active{
+  background-color: #da3c41;
+}
+
+/*main*/
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.element{
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.grid_container{
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: 350px;
+}
+
+.gird_itemA{
+  grid-row: 1 /2;
+  grid-column: 1/2;
+  background: #dc143c;
+}
+
+.grid_itemB{
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.grid_itemC{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+/*aside*/
+aside{
+  float: right;
+  margin: 20px 0;
+  width: 250px;
+}
+
+/*footer*/
+footer{
+  clear: both;
+}
