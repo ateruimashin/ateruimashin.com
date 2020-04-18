@@ -96,8 +96,32 @@ nav{
 }
 
 /*main*/
-h1{
+#content h1{
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #2e8b57;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
 
+#content h2{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#content h2::before{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
 }
 
 .wrapper{
@@ -112,6 +136,7 @@ h1{
   flex: 1;
   margin-left: 16px;
   margin-right: 16px;
+  text-align: center;
 }
 
 .grid_container{
@@ -152,8 +177,16 @@ aside{
   width: 250px;
 }
 
-.profile{
+.profile p{
   text-decoration: dashed underline #ff8c00;
+}
+
+.profile h3{
+  color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+  text-align: center;
 }
 
 /*footer*/
