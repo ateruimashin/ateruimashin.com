@@ -96,6 +96,10 @@ nav{
 }
 
 /*main*/
+h1{
+
+}
+
 .wrapper{
   display: flex;
   flex-direction: row;
@@ -155,7 +159,7 @@ aside{
 /*footer*/
 footer{
   clear: both;
-  background: #a9a9a9;
+  background: #c0c0c0;
 }
 
 .footer_text{
